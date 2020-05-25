@@ -1,5 +1,4 @@
 public class SubArray{
-    // DO NOT MODIFY THE LIST. IT IS READ ONLY
     public int maxSubArray(final List<Integer> a) {
         int maxEndingHere = a.get(0);
         int maxSoFar = a.get(0);
