@@ -1,3 +1,7 @@
+  
+import java.io.*;
+import java.util.*;
+
 public class SubArray{
     public int maxSubArray(final List<Integer> a) {
         int maxEndingHere = a.get(0);
