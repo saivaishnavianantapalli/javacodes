@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class AddOneToNumber{
+public class Solution{
     public ArrayList<Integer> plusOne(ArrayList<Integer> A) {
         int len = A.size();
         int sum = A.get(len-1)+1;
@@ -41,3 +41,4 @@ public class AddOneToNumber{
         return A;
     }
 }
+
