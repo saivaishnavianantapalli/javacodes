@@ -2,12 +2,12 @@
 import java.io.*;
 import java.util.*;
 
-public class SubArray{
-    public int maxSubArray(final List<Integer> a) {
-        int maxEndingHere = a.get(0);
-        int maxSoFar = a.get(0);
-        for (int i = 1; i < a.size(); i++) {
-            maxEndingHere = Math.max(a.get(i), a.get(i) + maxEndingHere);
+public class Solution {
+    public int maxSubArray(final int[] A) {
+        int maxEndingHere = A[0];
+        int maxSoFar = A[0];
+        for (int i = 1; i < A.length; i++) {
+            maxEndingHere = Math.max(A[i], A[i] + maxEndingHere);
             maxSoFar = Math.max(maxSoFar, maxEndingHere);
         }
         return maxSoFar;
